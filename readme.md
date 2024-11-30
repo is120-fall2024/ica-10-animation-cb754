@@ -8,6 +8,7 @@ Welcome to In-Class Activity number 10! In this activity we are going to learn a
 ### 1. Animate a logo in the header of the page.
 
 Add a logo to the header of the page. Have the logo get bigger and slightly rotate when hovered over.
+#what do you replace the # in an href tag with??^
 
 > [!TIP]
 > Remember that the `transition` property can be given multiple values to transition multiple properties at once: like `transition: width 2s, height 2s, translate(3px, 5px) 2s;`

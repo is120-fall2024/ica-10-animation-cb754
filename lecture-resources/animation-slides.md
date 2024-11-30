@@ -37,7 +37,7 @@ div {
     width: 100px;
     height: 100px;
     background-color: red;
-    transition: background-color 2s;
+    transition: background-color 2s; /*(changes background color from red to green when you hover, transitioning the color over 2 seconds)*/
 }
 div:hover {
     background-color: green;
@@ -55,7 +55,7 @@ div {
     width: 100px;
     height: 100px;
     background-color: red;
-    transition: all 2s;
+    transition: all 2s; /*all meaning we're going to translate all of the properties*/
 }
 div:hover {
     width: 300px;
@@ -239,11 +239,11 @@ rotate - Rotates the element clockwise by the specified angle
 
 scale - Scales the element both horizontally and vertically by the specified factors.
 
-`transform: scale(x, y);`
+`transform: scale(x%, y%);`
 
-skew - Skews the element both horizontally and vertically by the specified angles.
+skew - Skews the element both horizontally and vertically by the specified angles. Like if you were doing a rotating card.
 
-`transform: skew(x-angle, y-angle);`
+`transform: skew(x-angle, y-angle);`(xvaluedeg, yvaluedeg)
 
 ```css
 .box {

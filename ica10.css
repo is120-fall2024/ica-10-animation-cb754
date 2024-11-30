@@ -1,1 +1,40 @@
 /* EDIT THESE STYLES FOR YOUR TASKS */
+.logo img {
+    transition: all 350ms;
+}
+
+.logo img:hover {
+    transform: scale(115%, 115%) rotate(30deg);
+
+}
+/*#3 second row swap first 2 boxes*/
+.center-grid .box.box-4 { 
+    grid-column-start: 1;
+    grid-column-end: 2;
+    background-color: greenyellow;
+    animation-name: moveBox;
+    animation-duration: 2s;
+}
+.box-4 { 
+    animation:moveBox 2s
+}
+
+.box-5 { 
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+@keyframes moveBox {
+    0% { 
+        grid-column-start: 1;
+        grid-column-end: 2;      
+    }
+    50% { 
+        grid-column-start: 2;
+        grid-column-end: 3;
+    }
+    100% { 
+        grid-column-start: 1;
+        grid-column-end: 2;  
+    }
+}
